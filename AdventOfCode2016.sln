@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day1_TaxiDistance", "AdventOfCode2016\Day1_TaxiDistance.fsproj", "{A8FD0832-2E8B-465D-8ED1-9BB7364FFA1D}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day01_TaxiDistance", "Day01_TaxiDistance\Day01_TaxiDistance.fsproj", "{A8FD0832-2E8B-465D-8ED1-9BB7364FFA1D}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day02_BathroomSecurity", "Day02_BathroomSecurity\Day02_BathroomSecurity.fsproj", "{681FB618-B625-4442-9E1F-7FB343351377}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A8FD0832-2E8B-465D-8ED1-9BB7364FFA1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8FD0832-2E8B-465D-8ED1-9BB7364FFA1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8FD0832-2E8B-465D-8ED1-9BB7364FFA1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{681FB618-B625-4442-9E1F-7FB343351377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{681FB618-B625-4442-9E1F-7FB343351377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{681FB618-B625-4442-9E1F-7FB343351377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{681FB618-B625-4442-9E1F-7FB343351377}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
