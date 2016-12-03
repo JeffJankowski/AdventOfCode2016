@@ -1,7 +1,13 @@
-﻿// Learn more about F# at http://fsharp.net
-// See the 'F# Tutorial' project for more help.
+﻿// http://adventofcode.com/2016/day/2
+// 12/02/2016
+//
+
+
+open System
+
 
 [<EntryPoint>]
 let main argv = 
-    printfn "%A" argv
-    0 // return an integer exit code
+    
+
+    Console.Read ()

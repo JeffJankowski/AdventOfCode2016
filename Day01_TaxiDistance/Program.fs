@@ -23,7 +23,12 @@ let interp (x1,y1) (x2, y2) =
     if (x1 <> x2) then
         {x1..(sign (x2-x1))..x2} |> Seq.map (fun x -> (x, y1))
     else
-        {y1..(sign (y2-y1))..y2} |> Seq.map (fun y -> (x1, y)) 
+        {y1..(sign (y2-y1))..y2} |> Seq.map (fun y -> (x1, y))
+
+let pickDup (p1, p2) (hash : HashSet<int*int>) =
+    interp p1 p2
+    |> Seq.skip 1 
+    |> Seq.tryFind (fun p -> not (hash.Add (p)))
 
 
 [<EntryPoint>]
@@ -33,13 +38,12 @@ let main argv =
     
     //part 1
     let ((x1, y1), _) = dirs |> Seq.fold move ((0,0), 0)
-    Console.WriteLine ( "Total Distance: \t" + string (abs x1 + abs y1))
+    Console.WriteLine ( "Total Distance:   " + string (abs x1 + abs y1))
 
     //part 2
-    let locs = dirs |> Seq.scan move ((0,0), 0) |> Seq.map fst
-    let points = locs |> Seq.pairwise |> Seq.collect (fun (p1,p2) -> interp p1 p2 |> Seq.skip 1)
     let hash = new HashSet<int*int> ()
-    let (x2, y2) = points |> Seq.pick (fun p -> if hash.Add (p) then None else Some(p) )
-    Console.WriteLine ( "Revisit Distance:\t" + string (abs x2 + abs y2))
+    let locs = dirs |> Seq.scan move ((0,0), 0) |> Seq.map fst
+    let (x2, y2) = locs |> Seq.pairwise |> Seq.pick (fun ps -> pickDup ps hash)
+    Console.WriteLine ( "Revisit Distance: " + string (abs x2 + abs y2))
 
     Console.Read()
