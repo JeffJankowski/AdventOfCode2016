@@ -1,4 +1,10 @@
 ﻿module Helpers
+open System.Text.RegularExpressions
+
+
+
+// real modulus that workds with negatives instead of .NET's crap
+let modulo n m = ((n % m) + m) % m
 
 
 let chunkBy n s =
@@ -13,6 +19,12 @@ let chunkBy n s =
             yield r.ToArray()
     }
 
+
+
+let (|Regex|_|) pattern input =
+    let m = Regex.Match(input, pattern)
+    if m.Success then Some(List.tail [ for g in m.Groups -> g.Value ])
+    else None
 
 
 // F# for Scientists (page 166-167)

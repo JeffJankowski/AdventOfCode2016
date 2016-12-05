@@ -5,10 +5,8 @@
 open System
 open System.IO
 open System.Collections.Generic
+open Helpers
 
-
-// real modulus that workds with negatives instead of .NET's crap
-let modulo n m = ((n % m) + m) % m
 
 //N, E, S, W
 let compass = [| (0, 1); (1, 0); (0, -1); (-1, 0) |]

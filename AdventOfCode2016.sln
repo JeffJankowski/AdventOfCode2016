@@ -11,6 +11,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day03_Triangles", "Day03_Tr
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Helpers", "Helpers\Helpers.fsproj", "{331D7742-D7ED-498C-8FAF-9139EC71A342}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day04_DecoyData", "Day04_DecoyData\Day04_DecoyData.fsproj", "{3BFF960F-3AAE-4D30-925B-37E1BD0E7842}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{331D7742-D7ED-498C-8FAF-9139EC71A342}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{331D7742-D7ED-498C-8FAF-9139EC71A342}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{331D7742-D7ED-498C-8FAF-9139EC71A342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BFF960F-3AAE-4D30-925B-37E1BD0E7842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BFF960F-3AAE-4D30-925B-37E1BD0E7842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BFF960F-3AAE-4D30-925B-37E1BD0E7842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BFF960F-3AAE-4D30-925B-37E1BD0E7842}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
