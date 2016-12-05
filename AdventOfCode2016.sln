@@ -7,6 +7,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day01_TaxiDistance", "Day01
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day02_BathroomSecurity", "Day02_BathroomSecurity\Day02_BathroomSecurity.fsproj", "{681FB618-B625-4442-9E1F-7FB343351377}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day03_Triangles", "Day03_Triangles\Day03_Triangles.fsproj", "{9BEE54E9-8ABB-4A59-BCE5-0547639B31D9}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Helpers", "Helpers\Helpers.fsproj", "{331D7742-D7ED-498C-8FAF-9139EC71A342}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{681FB618-B625-4442-9E1F-7FB343351377}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{681FB618-B625-4442-9E1F-7FB343351377}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{681FB618-B625-4442-9E1F-7FB343351377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BEE54E9-8ABB-4A59-BCE5-0547639B31D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BEE54E9-8ABB-4A59-BCE5-0547639B31D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BEE54E9-8ABB-4A59-BCE5-0547639B31D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BEE54E9-8ABB-4A59-BCE5-0547639B31D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{331D7742-D7ED-498C-8FAF-9139EC71A342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331D7742-D7ED-498C-8FAF-9139EC71A342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331D7742-D7ED-498C-8FAF-9139EC71A342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331D7742-D7ED-498C-8FAF-9139EC71A342}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
