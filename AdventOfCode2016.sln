@@ -13,6 +13,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Helpers", "Helpers\Helpers.
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day04_DecoyData", "Day04_DecoyData\Day04_DecoyData.fsproj", "{3BFF960F-3AAE-4D30-925B-37E1BD0E7842}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day05_DoorHash", "Day05_DoorHash\Day05_DoorHash.fsproj", "{698538F7-943E-4D90-955F-30BBBCA848B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3BFF960F-3AAE-4D30-925B-37E1BD0E7842}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BFF960F-3AAE-4D30-925B-37E1BD0E7842}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BFF960F-3AAE-4D30-925B-37E1BD0E7842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{698538F7-943E-4D90-955F-30BBBCA848B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{698538F7-943E-4D90-955F-30BBBCA848B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{698538F7-943E-4D90-955F-30BBBCA848B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{698538F7-943E-4D90-955F-30BBBCA848B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
