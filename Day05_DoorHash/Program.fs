@@ -15,8 +15,20 @@ let md5hash (md5 : MD5) (input : string) =
     input
     |> Encoding.ASCII.GetBytes
     |> md5.ComputeHash
-    |> Seq.map (fun c -> c.ToString("X2"))
+    |> Seq.map (fun c -> c.ToString("x2"))
     |> Seq.reduce (+)
+
+let replace (curr : string) (i : int) (c : char) =
+    let arr = curr.ToCharArray ()
+    arr.[i] <- c
+    String.Concat arr
+
+let print (map : char[]) = 
+    map
+    |> Array.fold (fun acc x -> 
+        match x with
+        | '\000' -> acc + "_"
+        | ch -> acc + (string ch)) ""
 
 
 [<EntryPoint>]
@@ -28,21 +40,25 @@ let main argv =
         |> Seq.map (fun i -> md5hash md5 (INPUT + (string i)))
         |> Seq.where (fun hash -> hash.StartsWith("00000"))
 
+    Console.Write("Password:    ________")
     let pass = 
         hashes
         |> Seq.take 8
         |> Seq.map (fun hash -> hash.[5])
-        |> String.Concat
-    Console.WriteLine("Password:    " + pass)
+        |> Seq.fold (fun acc x -> 
+            let incomp = replace acc (acc.IndexOf('_')) x
+            Console.Write("\rPassword:    " + incomp)
+            incomp) "________"
 
-    let passMap = Array.zeroCreate<string> 8
+    Console.Write("\nBetter Pass: ________")
+    let passMap = Array.zeroCreate<char> 8
     hashes
-    |> Seq.pick (fun hash ->
-        let parsed, pos = Int32.TryParse (hash.[5].ToString ())
-        if parsed && pos < 8 && String.IsNullOrEmpty (passMap.[pos]) then 
-            passMap.[pos] <- hash.[6].ToString ()
-        if passMap |> Array.exists (String.IsNullOrEmpty) then None else Some(passMap))
-    |> ignore
-    Console.WriteLine("Better Pass: " + (passMap |> String.Concat))
+    |> Seq.map (fun hash -> Int32.TryParse (hash.[5].ToString ()), hash.[6])
+    |> Seq.takeWhile (fun _ -> 
+        passMap |> Array.exists (fun c -> c = '\000' ))
+    |> Seq.iter (fun ((parsed, pos), ch) ->   
+        if (parsed && pos < 8 && passMap.[pos] = '\000') then 
+            passMap.[pos] <- ch
+            Console.Write("\rBetter Pass: " + print passMap) )
 
     Console.Read ()
