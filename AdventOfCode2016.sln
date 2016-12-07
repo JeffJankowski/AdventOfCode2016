@@ -15,6 +15,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day04_DecoyData", "Day04_De
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day05_DoorHash", "Day05_DoorHash\Day05_DoorHash.fsproj", "{698538F7-943E-4D90-955F-30BBBCA848B9}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day06_ErrorCorrection", "Day06_ErrorCorrection\Day06_ErrorCorrection.fsproj", "{6CC19D8D-5393-4498-AEEF-DC8F1F8788DF}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day07_IPv7", "Day07_IPv7\Day07_IPv7.fsproj", "{A0789DA5-7A0E-4FF7-85AC-3633AA898724}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{698538F7-943E-4D90-955F-30BBBCA848B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{698538F7-943E-4D90-955F-30BBBCA848B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{698538F7-943E-4D90-955F-30BBBCA848B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CC19D8D-5393-4498-AEEF-DC8F1F8788DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CC19D8D-5393-4498-AEEF-DC8F1F8788DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CC19D8D-5393-4498-AEEF-DC8F1F8788DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CC19D8D-5393-4498-AEEF-DC8F1F8788DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0789DA5-7A0E-4FF7-85AC-3633AA898724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0789DA5-7A0E-4FF7-85AC-3633AA898724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0789DA5-7A0E-4FF7-85AC-3633AA898724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0789DA5-7A0E-4FF7-85AC-3633AA898724}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
