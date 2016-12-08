@@ -28,8 +28,8 @@ let print (pad : bool[][]) =
     let h = Array.length pad.[0]
     for y in 0..h-1 do
         for x in 0..w-1 do
-            printf "%s" (if pad.[x].[y] then "x" else "-")
-            if x = w-1 then printfn ""
+            printf "%s" (if pad.[x].[y] then "x" else " ")
+        printfn ""
 
 
 [<EntryPoint>]
