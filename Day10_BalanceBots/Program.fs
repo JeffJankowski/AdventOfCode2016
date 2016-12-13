@@ -1,4 +1,7 @@
-﻿
+﻿// http://adventofcode.com/2016/day/10
+// 12/12/2016
+//
+
 open System.IO;
 open System;
 open Helpers;
@@ -16,6 +19,7 @@ type Output = {
 type Node = 
     | BotNode of Bot 
     | OutNode of Output
+
 
 [<EntryPoint>]
 let main argv = 
@@ -55,7 +59,7 @@ let main argv =
             output.data <- Some value
             []
 
-    //run sim
+    //run sim and collect comparison values
     let (cell, _) = 
         values 
         |> List.collect (fun (v, b) -> run v (BotNode(bots.[b])) )
@@ -63,8 +67,8 @@ let main argv =
             match data with
             | Some 17, Some 61 -> true 
             | _, _ -> false)
-    printfn "Bot compare ID: %i" cell
 
+    printfn "Bot compare ID: %i" cell
     printfn "Output product: %i" (outs.[0].data.Value * outs.[1].data.Value * outs.[2].data.Value)
 
     Console.Read ()
