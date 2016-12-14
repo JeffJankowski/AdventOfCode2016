@@ -31,6 +31,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day11_RadioactiveElevator",
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day12_Assembunny", "Day12_Assembunny\Day12_Assembunny.fsproj", "{5CBECB7E-CEB9-4B11-89EC-950A14D7A976}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day13_CubeMaze", "Day13_CubeMaze\Day13_CubeMaze.fsproj", "{2D2668B0-BA30-4D9D-8072-1F5675ACC7E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -138,6 +140,12 @@ Global
 		{5CBECB7E-CEB9-4B11-89EC-950A14D7A976}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CBECB7E-CEB9-4B11-89EC-950A14D7A976}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5CBECB7E-CEB9-4B11-89EC-950A14D7A976}.Release|x64.ActiveCfg = Release|Any CPU
+		{2D2668B0-BA30-4D9D-8072-1F5675ACC7E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D2668B0-BA30-4D9D-8072-1F5675ACC7E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D2668B0-BA30-4D9D-8072-1F5675ACC7E3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2D2668B0-BA30-4D9D-8072-1F5675ACC7E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D2668B0-BA30-4D9D-8072-1F5675ACC7E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D2668B0-BA30-4D9D-8072-1F5675ACC7E3}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
