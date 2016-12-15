@@ -35,6 +35,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day13_CubeMaze", "Day13_Cub
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day14_SaltedMD5", "Day14_SaltedMD5\Day14_SaltedMD5.fsproj", "{38E62587-7383-44F6-9F85-7BEC02DBB77A}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day15_CapsuleTiming", "Day15_CapsuleTiming\Day15_CapsuleTiming.fsproj", "{9A190260-0DDE-4C8E-B650-62974466D005}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -154,6 +156,12 @@ Global
 		{38E62587-7383-44F6-9F85-7BEC02DBB77A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38E62587-7383-44F6-9F85-7BEC02DBB77A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{38E62587-7383-44F6-9F85-7BEC02DBB77A}.Release|x64.ActiveCfg = Release|Any CPU
+		{9A190260-0DDE-4C8E-B650-62974466D005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A190260-0DDE-4C8E-B650-62974466D005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A190260-0DDE-4C8E-B650-62974466D005}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9A190260-0DDE-4C8E-B650-62974466D005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A190260-0DDE-4C8E-B650-62974466D005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A190260-0DDE-4C8E-B650-62974466D005}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
