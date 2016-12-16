@@ -37,6 +37,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day14_SaltedMD5", "Day14_Sa
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day15_CapsuleTiming", "Day15_CapsuleTiming\Day15_CapsuleTiming.fsproj", "{9A190260-0DDE-4C8E-B650-62974466D005}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day16_DragonCurve", "Day16_DragonCurve\Day16_DragonCurve.fsproj", "{AE69988A-1AC7-42BD-8643-897F8F1E5A8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -162,8 +164,17 @@ Global
 		{9A190260-0DDE-4C8E-B650-62974466D005}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A190260-0DDE-4C8E-B650-62974466D005}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9A190260-0DDE-4C8E-B650-62974466D005}.Release|x64.ActiveCfg = Release|Any CPU
+		{AE69988A-1AC7-42BD-8643-897F8F1E5A8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE69988A-1AC7-42BD-8643-897F8F1E5A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE69988A-1AC7-42BD-8643-897F8F1E5A8A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AE69988A-1AC7-42BD-8643-897F8F1E5A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE69988A-1AC7-42BD-8643-897F8F1E5A8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE69988A-1AC7-42BD-8643-897F8F1E5A8A}.Release|x64.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(Performance) = preSolution
+		HasPerformanceSessions = true
 	EndGlobalSection
 EndGlobal
