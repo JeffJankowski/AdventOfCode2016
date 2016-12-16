@@ -4,7 +4,6 @@
 open System
 open System.IO
 open Helpers
-open System.Diagnostics
 
 let rec dragon (input: string) n =
     if (input.Length >= n) then input.Substring(0, n) else
@@ -23,8 +22,6 @@ let rec checksum (input: string) =
 
 [<EntryPoint>]
 let main argv =  
-    let sw = Stopwatch.StartNew();
     printfn "Checksum: %s" (checksum (dragon "01111001100111011" 35651584))
-    sw.Stop ()
-    printfn "Elapsed: %f sec" (float sw.ElapsedMilliseconds / 1000.0)
+
     Console.Read ()
