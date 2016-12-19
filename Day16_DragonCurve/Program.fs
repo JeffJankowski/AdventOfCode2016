@@ -23,5 +23,5 @@ let rec checksum (input: string) =
 [<EntryPoint>]
 let main argv =  
     printfn "Checksum: %s" (checksum (dragon "01111001100111011" 35651584))
-
+    
     Console.Read ()
