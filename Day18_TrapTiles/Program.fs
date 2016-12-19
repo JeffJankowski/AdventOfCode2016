@@ -1,5 +1,5 @@
-﻿// Learn more about F# at http://fsharp.net
-// See the 'F# Tutorial' project for more help.
+﻿// http://adventofcode.com/2016/day/18
+// 12/19/2016
 
 open System
 open System.IO
