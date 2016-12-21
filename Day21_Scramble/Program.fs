@@ -18,9 +18,8 @@ let swap_l (a:char) (b:char) (chs:char[]) =
 let rotateN (right:bool) (i:int) (chs:char[]) = 
     let n = i % chs.Length
     if n = 0 then chs else
-        match right with
-        | false -> Array.append chs.[n..chs.Length-1] chs.[0..n-1]
-        | true -> Array.append chs.[chs.Length-n..chs.Length-1] chs.[0..chs.Length-n-1]
+        if right then Array.append chs.[chs.Length-n..] chs.[..chs.Length-n-1]
+        else Array.append chs.[n..] chs.[..n-1]
 
 let rotate (a:char) (chs:char[]) =
     let i = Array.IndexOf (chs, a)
@@ -32,13 +31,13 @@ let unrotate (a:char) (chs:char[]) =
     |> List.find (fun ncharr -> chs = (rotate a ncharr))
 
 let reverse (x:int) (y:int) (chs:char[]) =
-    Array.concat [(if x = 0 then [||] else chs.[0..x-1]); 
+    Array.concat [(if x = 0 then [||] else chs.[..x-1]); 
         Array.rev chs.[x..y]; 
-        (if y = (chs.Length-1) then [||] else chs.[y+1..chs.Length-1])]
+        (if y = (chs.Length-1) then [||] else chs.[y+1..])]
 
 let move (x:int) (y:int) (chs:char[]) =
-    if x <= y then Array.concat [chs.[0..x-1]; chs.[x+1..y]; chs.[x..x]; chs.[y+1..chs.Length-1]]
-    else Array.concat [chs.[0..y-1]; chs.[x..x]; chs.[y..x-1]; chs.[x+1..chs.Length-1]]
+    if x <= y then Array.concat [chs.[..x-1]; chs.[x+1..y]; chs.[x..x]; chs.[y+1..]]
+    else Array.concat [chs.[..y-1]; chs.[x..x]; chs.[y..x-1]; chs.[x+1..]]
 
 let scramble (un:bool) (seed:string) instructions = 
     instructions
