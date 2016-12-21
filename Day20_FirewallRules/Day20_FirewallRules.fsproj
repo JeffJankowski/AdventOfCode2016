@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>b8fed93f-3e70-48aa-b1de-2d69402a990e</ProjectGuid>
+    <ProjectGuid>4cfd8c81-60ae-4d44-9118-69f326165fe7</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Day19_GreedyElves</RootNamespace>
-    <AssemblyName>Day19_GreedyElves</AssemblyName>
+    <RootNamespace>Day20_FirewallRules</RootNamespace>
+    <AssemblyName>Day20_FirewallRules</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
-    <Name>Day19_GreedyElves</Name>
+    <Name>Day20_FirewallRules</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +23,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\Day19_GreedyElves.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\Day20_FirewallRules.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -34,7 +34,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\Day19_GreedyElves.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\Day20_FirewallRules.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>

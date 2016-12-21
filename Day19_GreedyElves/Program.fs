@@ -3,7 +3,6 @@
 
 open System
 open System.IO
-open System.Collections.Generic
 
 let rec ssanta (elves: (int*int)[]) = 
     if elves.Length = 1 then elves.[0] else
