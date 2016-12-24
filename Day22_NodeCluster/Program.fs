@@ -1,5 +1,5 @@
-﻿// http://adventofcode.com/2016/day/21
-// 12/20/2016
+﻿// http://adventofcode.com/2016/day/22
+// 12/23/2016
 
 
 // NOTE: Solved part 2 by hand. Was gonna be another humongous BFS, so it was much easier
