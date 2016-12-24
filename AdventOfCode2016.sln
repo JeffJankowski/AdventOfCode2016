@@ -53,6 +53,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day22_NodeCluster", "Day22_
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day23_SafeCrack", "Day23_SafeCrack\Day23_SafeCrack.fsproj", "{F4C4139C-2956-4241-8F7C-110C0FA1FAC7}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day24_HVACMaze", "Day24_HVACMaze\Day24_HVACMaze.fsproj", "{2CA2DDFB-23BD-4E59-9DAC-34200C79CF76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -230,6 +232,14 @@ Global
 		{F4C4139C-2956-4241-8F7C-110C0FA1FAC7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F4C4139C-2956-4241-8F7C-110C0FA1FAC7}.Release|x64.ActiveCfg = Release|Any CPU
 		{F4C4139C-2956-4241-8F7C-110C0FA1FAC7}.Release|x64.Build.0 = Release|Any CPU
+		{2CA2DDFB-23BD-4E59-9DAC-34200C79CF76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CA2DDFB-23BD-4E59-9DAC-34200C79CF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CA2DDFB-23BD-4E59-9DAC-34200C79CF76}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2CA2DDFB-23BD-4E59-9DAC-34200C79CF76}.Debug|x64.Build.0 = Debug|Any CPU
+		{2CA2DDFB-23BD-4E59-9DAC-34200C79CF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CA2DDFB-23BD-4E59-9DAC-34200C79CF76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CA2DDFB-23BD-4E59-9DAC-34200C79CF76}.Release|x64.ActiveCfg = Release|Any CPU
+		{2CA2DDFB-23BD-4E59-9DAC-34200C79CF76}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
